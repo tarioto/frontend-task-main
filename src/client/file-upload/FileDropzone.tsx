@@ -2,7 +2,7 @@ import { type DragEvent, type ReactElement, useRef, useState } from 'react';
 
 import { classNames } from './lib/classNames';
 
-type FileDropzoneProps = {
+export type FileDropzoneProps = {
     /** Called with the files chosen or dropped; never with an empty list. */
     onFiles: (files: File[]) => void;
     /** Added to the root element. */

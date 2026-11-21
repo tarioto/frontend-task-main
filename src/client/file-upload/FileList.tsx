@@ -4,7 +4,7 @@ import { classNames } from './lib/classNames';
 import { formatBytes } from './lib/formatBytes';
 import { type FilesStatus, type StoredFile } from './types';
 
-type FileListProps = {
+export type FileListProps = {
     files: StoredFile[];
     status: FilesStatus;
     error?: string;
