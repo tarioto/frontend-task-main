@@ -3,14 +3,13 @@ import { userEvent } from '@testing-library/user-event';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { axe } from 'vitest-axe';
 
+import { fileInput } from '../test/fileInput';
+
 import { FileDropzone } from './FileDropzone';
 
 afterEach(() => {
     vi.restoreAllMocks();
 });
-
-/** The browser's file input sits behind the button, so tests reach it directly to simulate a choice. */
-const fileInput = (container: HTMLElement) => container.querySelector<HTMLInputElement>('input[type="file"]')!;
 
 /** What a browser reports while files (rather than text or links) are dragged. */
 const draggingFiles = { dataTransfer: { types: ['Files'] } };

@@ -3,7 +3,7 @@ import { type Upload } from '../types';
 
 import { request } from './request';
 
-type RestUploadOptions = {
+export type RestUploadOptions = {
     /** Files up to this size are sent in one request; larger files are sent in chunks of this size. */
     chunkSize?: number;
     /** Requests in flight at once, shared by every file this uploader handles. */

@@ -3,7 +3,7 @@ import { type ReactElement } from 'react';
 import { classNames } from './lib/classNames';
 import { type UploadItem } from './types';
 
-type UploadQueueProps = {
+export type UploadQueueProps = {
     items: UploadItem[];
     /** Added to the root element. */
     className?: string;
